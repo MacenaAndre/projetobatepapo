@@ -1,12 +1,13 @@
 body {
-    background-color: blueviolet;
+    background-color: #E5E5E5;
     display: flex;
     justify-content: center;
 }
 .container {
-    height: 50vw;
+    height: 800px;
     width: 500px;
     position: relative;
+    background-color:  #F3F3F3;
 }
 .header {
     position: fixed;
@@ -54,4 +55,29 @@ body {
     height: 100%;
     width: 100%;
     z-index: 1;
+    margin-top: 105px;
+}
+.public-msg {
+    min-height: 40px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 4px 0px;
+}
+.private-msg {
+    min-height: 40px;
+    width: 100%;
+    background-color: #FFDEDE;
+    margin: 4px 0px;
+}
+.status {
+    min-height: 40px;
+    width: 100%;
+    background-color: #DCDCDC;
+    margin: 4px 0px;
+}
+input[type="text"] {
+  border: none;
+  width: 80%;
+  height: 40px;
+  outline: 0;
 }
