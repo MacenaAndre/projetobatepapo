@@ -1,4 +1,4 @@
-let user = document.querySelector(".enter").value;
+let user;
 let Idintervalstatus;
 let Idintervalmessage;
 let messagelist;
@@ -12,13 +12,24 @@ function eraseValue (element) {
        element.value = "";
     }
 }
+function sendEnter(event) {
+    console.log(event);
+    if(event.key === "Enter") {
+      sendMessage();
+    }
+}
 function login() {
+    user = document.querySelector(".enter").value;
+    if(user !== "" && user !== "Digite o seu nome" && user !== null && user !== undefined) {
     user = document.querySelector(".enter").value;
     document.querySelector(".separate").innerHTML =`
     <img class="load-img" src="https://acegif.com/wp-content/uploads/loading-45.gif" alt="">
     <p class="load">Entrando...</p>
-    `
+    `;
     enterRoom();
+  } else {
+    alert("Usuário inválido, por favor digite um nome válido");
+  }
 }
 function enterRoom () {
     let userobject = {
@@ -105,6 +116,9 @@ function sendFail(error) {
     window.location.reload();
 }
 function printMessages() {
+    document.querySelector(".container").classList.remove("hidden");
+    document.querySelector(".log-in").classList.add("hidden");
+
     const element = document.querySelector(".content");
     element.innerHTML = "";
 
@@ -154,5 +168,6 @@ function printMessages() {
     }
     document.querySelector(".last").scrollIntoView();
 }
+
 
 

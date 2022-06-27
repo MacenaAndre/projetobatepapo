@@ -31,7 +31,7 @@ body {
 }
 .people-icon {
     font-size: 42px;
-
+    cursor: pointer;
 }
 .bottom {
     position: fixed;
@@ -59,6 +59,7 @@ body {
     height: 100%;
     z-index: 1;
     margin-top: 105px;
+    word-break: break-all;
 }
 .public-msg {
     min-height: 40px;
@@ -68,9 +69,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    overflow-x: hidden;
     padding: 13px;
     box-sizing: border-box;
+    word-break: break-all;
 }
 .private-msg {
     min-height: 40px;
@@ -80,9 +81,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    overflow-x: hidden;
     padding: 13px;
     box-sizing: border-box;
+    word-break: break-all;
 }
 .status {
     min-height: 40px;
@@ -92,9 +93,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    overflow-x: hidden;
     padding: 13px;
     box-sizing: border-box;
+    word-break: break-all;
 }
 textarea[type="text"] {
   border: none;
@@ -105,6 +106,7 @@ textarea[type="text"] {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  resize: none;
 }
 .time {
     font-family: 'Roboto', sans-serif;
@@ -121,11 +123,12 @@ textarea[type="text"] {
     font-style: italic;
 }
 .log-in {
-    width: 500px;
-    height: 1500px;
+    max-width: 500px;
+    width: 100%;
+    height: 100vh;
     background-color: white;
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,8 +175,8 @@ input {
 }
 .load-img {
     margin-top: 94px;
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     border-radius: 50px;
 }
 .load {
@@ -182,9 +185,14 @@ input {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 400;
     font-size: 18px;
 }
+.hidden {
+    display: none;
+}
+
 
 
 

@@ -12,6 +12,7 @@
     <title>BPUol</title>
 </head>
 <body>
+
     <div class="log-in">
         <img class="logo1" src="./Imagens pjt5/logo 2.png" alt="">
         <div class="separate">
@@ -19,7 +20,7 @@
           <div class="button" onclick="login()">Entrar</div>
         </div>
     </div>
-    <div class="container">
+    <div class="container hidden">
         <div class="header">
             <img class="logo" src="./Imagens pjt5/logo 2.png" alt="">
             <ion-icon class="people-icon" name="people"></ion-icon>
@@ -30,12 +31,10 @@
             <div class="public-msg"></div>
         </div>
         <div class="bottom">
-            <textarea type="text" class="typing-space sample" onclick="eraseValue(this)">Escreva aqui...</textarea>
+            <textarea rows="1" type="text" class="typing-space sample" onkeypress="sendEnter(event)" onclick="eraseValue(this)">Escreva aqui...</textarea>
             <ion-icon class="plane-icon" onclick="sendMessage()"name="paper-plane-outline"></ion-icon>
         </div>
     </div>
-    
-    
     
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
