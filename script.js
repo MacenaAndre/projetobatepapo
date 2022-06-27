@@ -13,10 +13,14 @@ function eraseValue (element) {
     }
 }
 function sendEnter(event) {
-    console.log(event);
     if(event.key === "Enter") {
       sendMessage();
     }
+}
+function logEnter(event) {
+  if(event.key === "Enter") {
+    login();
+  }
 }
 function login() {
     user = document.querySelector(".enter").value;
@@ -41,7 +45,6 @@ function enterRoom () {
 
 }   
 function userOk(response) {
-    console.log("deu bom");
     getMessages();
     userStatus();
 }
@@ -86,7 +89,6 @@ function userStatus() {
 function userOnline(response1) {
     let interval = setInterval(userStatus, 5000);
     Idintervalstatus = interval;
-    console.log("online");
 }
 function userOffline(error1) {
     alert("Você saiu da sala.");
