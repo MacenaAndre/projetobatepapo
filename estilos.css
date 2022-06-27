@@ -75,7 +75,7 @@ body {
     background-color: #DCDCDC;
     margin: 4px 0px;
 }
-input[type="text"] {
+textarea[type="text"] {
   border: none;
   width: 80%;
   height: 40px;
