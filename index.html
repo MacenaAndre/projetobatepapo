@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="./reset.css">
     <title>BPUol</title>
 </head>
 <body>
+    <div class="log-in">
+        <img class="logo1" src="./Imagens pjt5/logo 2.png" alt="">
+        <div class="separate">
+          <input class="enter" onclick="eraseValue(this)" type="text" value="Digite o seu nome">
+          <div class="button" onclick="login()">Entrar</div>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
             <img class="logo" src="./Imagens pjt5/logo 2.png" alt="">
             <ion-icon class="people-icon" name="people"></ion-icon>
         </div>
-        <ul class="content">
-            <li class="private-msg">ola</li>
-            <li class="public-msg"></li>
-            <li class="status"><span class="time">time</span><span class="user">user</span>message</li>
-        </ul>
+        <div class="content">
+            <div class="status"></div>
+            <div class="private-msg"></div>
+            <div class="public-msg"></div>
+        </div>
         <div class="bottom">
-            <textarea type="text" class="typing-space" onclick="eraseValue(this)">Escreva aqui...</textarea>
-            <ion-icon class="plane-icon" name="paper-plane-outline"></ion-icon>
+            <textarea type="text" class="typing-space sample" onclick="eraseValue(this)">Escreva aqui...</textarea>
+            <ion-icon class="plane-icon" onclick="sendMessage()"name="paper-plane-outline"></ion-icon>
         </div>
     </div>
+    
     
     
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

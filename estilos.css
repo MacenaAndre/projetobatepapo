@@ -2,6 +2,8 @@ body {
     background-color: #E5E5E5;
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 .container {
     width: 500px;
@@ -48,6 +50,7 @@ body {
 }
 .plane-icon {
     font-size: 28px;
+    cursor: pointer;
 }
 .content {
     background-color:  #F3F3F3;
@@ -65,6 +68,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow-x: hidden;
+    padding: 13px;
+    box-sizing: border-box;
 }
 .private-msg {
     min-height: 40px;
@@ -74,6 +80,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow-x: hidden;
+    padding: 13px;
+    box-sizing: border-box;
 }
 .status {
     min-height: 40px;
@@ -83,6 +92,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow-x: hidden;
+    padding: 13px;
+    box-sizing: border-box;
 }
 textarea[type="text"] {
   border: none;
@@ -90,6 +102,89 @@ textarea[type="text"] {
   min-height: 7px;
   max-height: 20px;
   outline: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
+.time {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #AAAAAA;
+}
+.user {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.sample {
+    font-style: italic;
+}
+.log-in {
+    width: 500px;
+    height: 1500px;
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.logo1 {
+    margin-top: 72px;
+}
+.separate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 94px;
+    width: 261px;
+    height: 54px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #AEAEAE;
+    border: 1px solid #AEAEAE;
+    border-radius: 4px;
+    outline: 0;
+}
+.button {
+    margin-top: 15px;
+    width: 109px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height: 45px;
+    background-color: #E7E7E7;
+    color: #696969;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.load-img {
+    margin-top: 94px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50px;
+}
+.load {
+    margin-top: 15px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 400;
+    font-size: 18px;
+}
+
 
 
