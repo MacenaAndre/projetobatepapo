@@ -4,10 +4,9 @@ body {
     justify-content: center;
 }
 .container {
-    height: 800px;
     width: 500px;
     position: relative;
-    background-color:  #F3F3F3;
+    background-color: #F3F3F3;
 }
 .header {
     position: fixed;
@@ -52,8 +51,9 @@ body {
 }
 .content {
     background-color:  #F3F3F3;
-    height: 100%;
+    max-width: 500px;
     width: 100%;
+    height: 100%;
     z-index: 1;
     margin-top: 105px;
 }
@@ -62,22 +62,34 @@ body {
     width: 100%;
     background-color: #FFFFFF;
     margin: 4px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .private-msg {
     min-height: 40px;
     width: 100%;
     background-color: #FFDEDE;
     margin: 4px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .status {
     min-height: 40px;
     width: 100%;
     background-color: #DCDCDC;
     margin: 4px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 textarea[type="text"] {
   border: none;
   width: 80%;
-  height: 40px;
+  min-height: 7px;
+  max-height: 20px;
   outline: 0;
 }
+
+
